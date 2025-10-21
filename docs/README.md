@@ -1,14 +1,13 @@
 # YouTube Video Summarizer Project
 
-This project is a Python application that searches for YouTube videos based on a query, retrieves their content, and generates both text and audio summaries.
+This project is a Python application that searches for YouTube videos based on a query, retrieves their content, and generates text summaries.
 
 ## Features
 
 * **YouTube Search**: Uses the YouTube Data API v3 to find a list of relevant videos.
-* **Multimodal Summarization**: Uses the Google Gemini API to "watch" and "listen" to videos directly to create a summary.
-* **Transcript Fallback**: If a video is too long for the multimodal API, it attempts to summarize its text transcript instead.
+* **Multimodal Summarization**: Uses the Google Gemini API (`gemini-2.5-flash`) to "watch" and "listen" to videos directly to create a summary.
 * **Text Summary**: Provides a concise text summary of each video.
-* **Audio Summary**: (Planned) Provides a podcast-style audio version of the summary using a Text-to-Speech API.
+* **Interactive Prompts**: Asks the user for the search topic and the number of videos to summarize.
 
 ## Setup
 
